@@ -34,7 +34,7 @@ aritmetic(1,2,3,4,5, operator = '*')
 # Ans B)
 
 # i)
-popc = read.csv('C:/Users/hungu/Documents/MTech DS Docs/R Programming/pop_change.csv', skip = 2, row.names = "STATE_OR_REGION")
+popc = read.csv('pop_change.csv', skip = 2, row.names = "STATE_OR_REGION")
 
 # ii)
 sum(is.na.data.frame(popc)) > 0
@@ -43,7 +43,9 @@ sum(is.na.data.frame(popc)) > 0
 popc %>% select(contains("Population"))
 
 # iv)
-popc %>% mutate(States = rownames(.)) %>% mutate(percent = ((X2000_POPULATION-X2010_POPULATION)/((X2000_POPULATION+X2010_POPULATION)/2))) %>% filter(percent > 0) %>% select(States) 
+popc %>% mutate(States = rownames(.)) %>% 
+  mutate(percent = ((X2000_POPULATION-X2010_POPULATION)/((X2000_POPULATION+X2010_POPULATION)/2))) %>% 
+  filter(percent > 0) %>% select(States) 
 
 # v)
 sapply(popc, mean)
@@ -57,10 +59,12 @@ popc = rbind(popc, sapply(popc, mean))
 iris %>% ggplot(aes(x = Petal.Length, y=Sepal.Width)) + geom_line()
 
 # ii)
-iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) + geom_smooth(method="auto", stat="summary")  + labs(x="Sepal Length",y="Sepal Width")
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) + geom_smooth(method="auto", stat="summary")  + 
+  labs(x="Sepal Length",y="Sepal Width")
 
 # iii)
-iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) + geom_smooth(method="auto", stat="summary") + geom_point() + labs(x="Sepal Length",y="Sepal Width")
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) + geom_smooth(method="auto", stat="summary") + 
+  geom_point() + labs(x="Sepal Length",y="Sepal Width")
 
 # iv)
 ggplot(iris, aes(x = Sepal.Length, y=Sepal.Width, col=Species, 
