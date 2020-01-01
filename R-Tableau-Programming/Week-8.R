@@ -59,7 +59,7 @@ jane_austen_sentiment <- tidy_books %>% inner_join(get_sentiments("bing")) %>% c
 View(jane_austen_sentiment)
 
 #Playing around with Sherlock Data
-sherlock_book <-  readRDS( "D:\\Vikraant\\M-Tech DS 2019-2021\\Sem 1\\R & Tableau\\humanitiesDataInR\\data\\ch09\\holmes_anno\\01_a_scandal_in_bohemia.Rds")
+sherlock_book <-  readRDS( "01_a_scandal_in_bohemia.Rds")
 View(sherlock_book)
 
 
