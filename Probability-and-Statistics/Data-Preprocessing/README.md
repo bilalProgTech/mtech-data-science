@@ -1,0 +1,27 @@
+# MonthlySurfaceAnalysis
+Q1. Clean the below data set in R software. Replace mean/median in the place of missing observation. <br/>
+Q2. Create two separate data frame in R for HR in UTC (8:30 AM and 17:30 PM) for mean wind speed from 1984 to 2008
+
+MONTHLY SURFACE TAB3 DATA :
+-------------------------
+  INDEX = INDEX NO. OF THE STATION <br/>
+  YEAR  = YEAR<br/>
+  MN    = MONTH<br/>
+  HR    = HOUR IN UTC ( 03 UTC = 0830 IST, 12 UTC = 1730 IST)<br/>
+  RH    = MEAN RELATIVE HUMIDITY IN %<br/>
+  NO    = No. OF OBSERVATIONS IN THE MONTH<br/>
+  MWS   = MEAN WIND SPEED IN KMPH AT THE TIME OF OBSERVATION<br/>
+  W1    = NO. OF DAYS WITH WIND SPEED >= 62 kmph<br/>
+  W2    = NO. OF DAYS WITH WIND SPEED 20 - 61 kmph<br/>
+  W3    = NO. OF DAYS WITH WIND SPEED 01 - 19 kmph<br/>
+  W4    = NO. OF DAYS WITH CALM WIND<br/>
+  N     = NO. OF DAYS WITH WIND FROM NORTHERLY DIRECTION<br/>
+  NE    = NO. OF DAYS WITH WIND FROM NORTH EASTERLY DIRECTION<br/>
+  E     = NO. OF DAYS WITH WIND FROM EASTERLY DIRECTION<br/>
+  SE    = NO. OF DAYS WITH WIND FROM SOUTH EASTERLY DIRECTION<br/>
+  S     = NO. OF DAYS WITH WIND FROM SOUTHERLY DIRECTION<br/>
+  SW    = NO. OF DAYS WITH WIND FROM SOUTH WESTERLY DIRECTION<br/>
+  W     = NO. OF DAYS WITH WIND FROM WESTERLY DIRECTION<br/>
+  NW    = NO. OF DAYS WITH WIND FROM NORTH WESTERLY DIRECTION<br/>
+  CA    = NO. OF DAYS WITH CALM WIND<br/>
+  VR    = NO. OF DAYS WITH VARIABLE WIND DIRECTION<br/>
