@@ -20,17 +20,17 @@ https://www.kaggle.com/c/home-credit-default-risk/
 I applied five K-folds on random forest classifier an logistic regression. <br>
 
 Results of 5-folds on RFC without feature engineering <br>
-Mean Accuracy Score on CV-5:  0.9193297150628963
-Mean Precision Score on CV-5:  0.0010473313192346425
-Mean Recall Score on CV-5:  0.7611904761904762
-Mean ROC AUC Score on CV-5:  0.7141749427426861
-Mean Logloss Score on CV-5:  0.26840721365271203
+Mean Accuracy Score on CV-5:  0.9193297150628963<br>
+Mean Precision Score on CV-5:  0.0010473313192346425<br>
+Mean Recall Score on CV-5:  0.7611904761904762<br>
+Mean ROC AUC Score on CV-5:  0.7141749427426861<br>
+Mean Logloss Score on CV-5:  0.26840721365271203<br>
 
 Results of 5-folds on RFC with feature engineering <br>
-Mean Accuracy Score on CV-5:  0.9192939439213379
-Mean Precision Score on CV-5:  0.0006445115810674723
-Mean Recall Score on CV-5:  0.6671428571428571
-Mean ROC AUC Score on CV-5:  0.715156124646816
+Mean Accuracy Score on CV-5:  0.9192939439213379<br>
+Mean Precision Score on CV-5:  0.0006445115810674723<br>
+Mean Recall Score on CV-5:  0.6671428571428571<br>
+Mean ROC AUC Score on CV-5:  0.715156124646816<br>
 Mean Logloss Score on CV-5:  0.2704385764754867 <br>
 
 To select the feature I removed the variable that holds a correlation of 98% and above after gaining the feature importance from RFC, the variables which are neglected are, <br>
@@ -38,8 +38,8 @@ Total variables: 31 <br>
 ['AMT_GOODS_PRICE', 'OBS_60_CNT_SOCIAL_CIRCLE', 'LIVINGAREA_AVG', 'YEARS_BEGINEXPLUATATION_MEDI', 'APARTMENTS_MEDI', 'LANDAREA_MEDI', 'LANDAREA_MODE', 'BASEMENTAREA_MEDI', 'YEARS_BUILD_MEDI', 'NONLIVINGAREA_MEDI', 'COMMONAREA_MEDI', 'YEARS_BUILD_AVG', 'LIVINGAPARTMENTS_MEDI', 'ENTRANCES_MEDI', 'ENTRANCES_MODE', 'FLAG_OWN_REALTY_Y', 'FLOORSMAX_MEDI', 'FLAG_OWN_CAR_Y', 'CODE_GENDER_F', 'FLOORSMAX_MODE', 'FLOORSMIN_MEDI', 'FLOORSMIN_MODE', 'NONLIVINGAPARTMENTS_MEDI', 'ELEVATORS_MEDI', 'ELEVATORS_MODE', 'NAME_CONTRACT_TYPE_Revolving loans', 'EMERGENCYSTATE_MODE_Unknown', 'HOUSETYPE_MODE_Unknown', 'FLAG_EMP_PHONE', 'NAME_INCOME_TYPE_Pensioner', 'ORGANIZATION_TYPE_XNA'] <br>
 
 Results of 5-folds on Logistic Regression <br>
-Mean Accuracy Score on CV-5:  0.9192549209587615
-Mean Precision Score on CV-5:  0.0
-Mean Recall Score on CV-5:  0.0
-Mean ROC AUC Score on CV-5:  0.6122580207177722
-Mean Logloss Score on CV-5:  0.276148176334584
+Mean Accuracy Score on CV-5:  0.9192549209587615<br>
+Mean Precision Score on CV-5:  0.0<br>
+Mean Recall Score on CV-5:  0.0<br>
+Mean ROC AUC Score on CV-5:  0.6122580207177722<br>
+Mean Logloss Score on CV-5:  0.276148176334584<br>
